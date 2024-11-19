@@ -1,0 +1,103 @@
+/* Reset default browser styles */
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General body styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: aqua;
+    line-height: 1.6;
+  }
+  
+  /* Wrapper styling */
+  #wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  
+  /* Header styles */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #page-banner {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  /* Image gallery section */
+  #image-gallery {
+    text-align: center;
+  }
+  
+  #image-gallery h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid container for the gallery */
+  .galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  /* Gallery item styling */
+  .gallery-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image styling */
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Image description styling */
+  .image-description {
+    font-size: 1rem;
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: #666;
+    text-align: center;
+    border-top: 2px solid #ddd;
+    margin: 0;
+  }
+  
+  .image-description:hover {
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  

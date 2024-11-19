@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles1.css">
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div id="page-banner">
+          <h1 class="title">image gallery</h1>
+        </div>
+      </header>
+      <div id="image-gallery">
+        <h2 class="title">featured images</h2>
+        <div class="galleryGrid"></div>
+      </div>
+    </div>
+    <script>
+      const galleryGrid = document.querySelector(".galleryGrid");
+
+      const imageUrls = [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300",
+      ];
+
+      const imageDescriptions = [
+        "description 1",
+        "description 2",
+        "description 3",
+        "description 4",
+        "description 5",
+        "description 6",
+      ];
+
+      // add initial images to gallery
+
+      for (let i = 0; i < imageUrls.length; i++) {
+        const item = document.createElement("div");
+        item.className = "gallery-item";
+
+        const img = document.createElement("img");
+        img.src = imageUrls[i];
+
+        const p = document.createElement("p");
+        p.className = "image-description";
+        p.textContent = imageDescriptions[i];
+
+        item.appendChild(img);
+        item.appendChild(p);
+
+        galleryGrid.appendChild(item);
+      }
+    </script>
+  </body>
+</html>
